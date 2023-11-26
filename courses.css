@@ -1,0 +1,186 @@
+.mainContainer {
+  box-sizing : border-box;
+  width : 100%;
+  height : 500px;
+  }
+
+  .bluepic {
+    margin-top: 2%;
+    width : 100%;
+  }
+  
+  body {
+    background-image : url("Untitled design.png");
+    background-repeat : no-repeat;
+    background-attachment : fixed;
+    background-position :  center;
+  }
+
+  .flex-container {
+  display : flex;
+  flex-wrap : wrap;
+  gap : 15px 1px;
+  justify-content : center;
+  align-items : center;
+  padding-top : 50px; 
+  }
+
+  .flex-container-content {
+  position : relative;
+  background : rgb(250, 247, 247);
+  margin : 50px;
+  font-family : Georgia, "Courier New", Courier, monospace;
+  font-size : x-large;
+  padding : 1% 2% 1% 2%;
+  border-left-style : solid;
+  border-bottom-style : solid;
+  border-radius : 20px;
+  width : 25%;
+  margin-top: 0%;
+  }
+
+  .checked {
+  color : orange;
+  }
+
+  .unchecked {
+  color : #bbbbbb;
+  }
+
+  .flex-container-content:hover {
+  cursor : pointer;
+  }
+
+  .flex-container-content:hover .courses {
+   display : flex; 
+  }
+
+  .courses {
+  display : none;
+  position : absolute;
+  top : 100%;
+  color : rgb(67, 65, 65);
+  background : rgb(243, 243, 243);
+  font-family : Georgia, "Courier New", Courier, monospace;
+  font-size : large;
+  padding : 2%;
+  box-shadow : 0 0 3px 0;
+  text-align : center;
+  width : 220%;
+  position : absolute;
+  z-index : 99;
+  }
+
+  #course2 {
+    width : 200%;
+  }
+
+  #course5 {
+    width : 200%;
+  }
+
+
+
+  .flex-container-content:hover .course3-6 {
+    display : block;
+  }
+
+  table {
+  border-collapse : collapse;
+  width : 99%;
+  }
+  
+  th, td {
+  text-align : center;
+  padding : 3px;
+  }
+  tr:nth-child(odd) {
+  background-color : white;
+  font-size : 0.7em;
+  }
+  tr:nth-child(even) {
+  background-color : #f2f2f2;
+  font-size : 0.7em;
+  }
+  #flex-1:hover {
+  background : #dcfaff;
+  color : #56d2e6;
+  }
+  #flex-1 {
+  color : #56d2e6;
+  border-color : #56d2e6;
+  }
+  #table1 th {
+  background-color : #56d2e6;
+  color : white;
+  font-size : 1em;
+  }
+  #flex-2:hover {
+  background : #eaffdc;
+  color : #7dd343;
+  }
+  #flex-2 {
+  color : #7dd343;
+  border-color : #7dd343;
+  }
+  #table2 th {
+  background-color : #7dd343;
+  color : white;
+  font-size : 1em;
+  }
+  #flex-3:hover {
+  background : #fff5d6;
+  color : #fdd243;
+  }
+  #flex-3 {
+  color : #fdd243;
+  border-color : #fdd243;
+  }
+  #table3 th {
+  background-color : #fdd243;
+  color : white;
+  font-size : 1em;
+  }
+  #flex-4:hover {
+  background : #ffdff3;
+  color : #fd87d2;
+  }
+  #flex-4 {
+  color : #fd87d2;
+  border-color : #fd87d2;
+  }
+  #table4 th {
+  background-color : #fd87d2;
+  color : white;
+  font-size : 1em;
+  }
+  #flex-5:hover {
+  background : #dae0ff;
+  color : #7088ff;
+  }
+  #flex-5 {
+  color : #7088ff;
+  border-color : #7088ff;
+  }
+  #table5 th {
+  background-color : #7088ff;
+  color : white;
+  font-size : 1em;
+  }
+  #flex-6:hover {
+  background : #fee5ff;
+  color : #f45fff;
+  }
+  #flex-6 {
+  color : #f45fff;
+  border-color : #f45fff;
+  }
+  #table6 th {
+  background-color : #f45fff;
+  color : white;
+  font-size : 1em;
+  }
+
+.T1 {
+  width: 60%;
+}

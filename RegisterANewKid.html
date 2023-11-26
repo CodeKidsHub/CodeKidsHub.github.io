@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<style>
+			@import url("CODE KIDS HUB.css");
+			@import url("Register.css");
+		</style>
+		<script src="CodeKidsHub.js"></script>
+		<script src="Register.js"></script>
+		<title>Register A New Kid</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+			crossorigin="anonymous" referrerpolicy="no-referrer">
+	</head>
+	<body onload="onload()">
+		<header class="line"> </header>
+		<header class="HTMLHeader">
+			<div class="navbar">
+				<a href = "index.html"><img src= "CodeKidsHubLogo.png" alt= "CODE KIDS HUB Logo" class="logo"></a>
+				<nav>
+					<ul>
+						<li><a style="text-decoration:none" href = "ParentDashboard.html" accesskey="p">Parent's Dashboard</a></li>
+						<li><a style="text-decoration:none" href = "Administrator%20Dashboard.html" accesskey="a">Administrator Dashboard</a></li>
+						<li><a style="text-decoration:none" href = "courses.html" accesskey="c">Courses</a></li> 
+						<li><a style="text-decoration:none" href = "Toturs.html" accesskey="t">Tutors</a> </li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<p style="padding-top: 12%; padding-left: 1%;"> 
+			<span> 
+				<span > 
+				 <a href="index.html" title="Home" style="text-decoration: none; color: gray" >Home</a> 
+					&gt; 
+				 <a href="ParentDashboard.html" title="Parents Dashboard" style="text-decoration: none; color: gray">Parents Dashboard</a> 
+					&gt; 
+				 <strong>Register A New Kid</strong> 
+				</span> 
+			</span>
+		</p>
+	<main>
+		<div class="Register">	
+			<div class="Register1">
+				 <div id="error"></div>
+				<form onsubmit="return validate()" id="form" action="#" method="POST" >
+							<fieldset class="Kidform" name="Kidform">
+								<legend>Kid's Information</legend><br>
+								<div class="box"> 
+									photo: <input type="file" name="fileToUpload" id="fileToUpload" oninput="displayUploadedPhoto()"><br>
+									<img id="previousPhoto" src="child.png" alt="Child photo" style="width: 50%; height: 77%; padding-top: 4%;">
+									<img id="uploadedPhoto" src="" alt="Uploaded photo" style="display: none; width: 50%; height: 77%; padding-top: 4%;">
+								</div>
+
+
+								<div class="information">
+									<ul>
+										<li>&nbsp;</li>
+										<li><label>Full name: <br> <input type="text" id="fullname" name="fullname" placeholder="Your name.."></label></li>
+										<li>&nbsp;</li>
+										<li><label>Date of birth: <br> <input type="date" id="dateofbirth" name="dateofbirth"></label></li>
+										<li>&nbsp;</li>
+										<li><label>Gender:<br><input type="radio" name="gender" id="female" value="Female" > Female </label>
+										<label><input type="radio" name="gender" id="male" value="Male" > Male</label></li>
+										<li>&nbsp;</li>
+									</ul>	
+								</div>
+							</fieldset>
+					</div><br>
+
+
+				 <div class="Register2">
+						<fieldset class="Contactform" name="Contactform">
+						   <legend>Contact Information</legend><br>
+							<ul>
+								<li>
+									<label for="phoneContry">Phone Number: <br>
+										<select size="1">
+										 
+										 <option>+966</option>
+										 <option>+1</option>
+										 <option>+971</option>
+										 <option>+973</option>
+										 <option>+965</option>
+										 <option>+212</option>
+										 <option>+964</option>
+										 <option>+44</option>
+										 <option>+20</option>
+										 <option>+962</option>
+										 <option>+967</option>
+										 <option>+963</option>
+										 <option>+974</option>
+										</select>
+										
+									</label>
+									 <input type="tel" id ="phoneContry" name="phoneContry" placeholder="**********">
+
+								</li>
+								<li>&nbsp;</li>
+								<li>
+									<label for="email">Email: <br> <input type="email" id="email" name="email" placeholder="example@something.com">
+									
+									</label>
+								</li>
+
+							</ul><br>
+
+						</fieldset>
+						
+						  <button type="submit" id="submit" name="submit" class="button" >Register</button>
+				</form>   
+		</div>
+		
+		
+	</div>
+
+</main>
+
+<footer>
+	<div class="footerContainer">
+		<div class="row">
+			<div class="footerNav">
+				<h4>EDUCATIONAL TOOLS</h4>
+					<ul>
+						<li>Interactive Worksheets</li>
+						<li>Worksheets Generator</li>
+						<li>Guided Lessons</li>
+						<li>Progress Tracker</li>
+					 </ul>
+		
+			</div>
+			<div class="footerNav">
+				<h4>CONTACT US</h4>
+					<ul>
+						<li>+996533310022</li>
+						<li>+99653331111</li>
+						<li>+0116767877</li>
+						<li><a href = "mailto:CodeKidsHub@gmail.com">CodeKidsHub@gmail.com</a></li>
+					</ul>
+			</div>
+		</div>	
+	</div>
+	<div class="footerBottom">
+		<div class="socialIcons">
+			<a href="https://www.facebook.com/profile.php?id=61552633020110&locale=ar_AR" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+			<a href="https://twitter.com/CodeKidsHub" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+			<a href="https://www.instagram.com/codekidhub/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+			<a href="https://www.youtube.com/@CodeKidsHub" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+		</div>		
+		<p>© 2023 Code Kids Hub. All rights reserved</p>	
+	</div>	
+</footer>
+</body>
+</html>

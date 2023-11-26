@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<style>
+			@import url("CODE KIDS HUB.css");
+			@import url("Administrator Dashboard.css");
+		</style>
+		<script src="CodeKidsHub.js"></script>
+		<script src="AdministratorDashboard.js"></script>
+		<title>Administrator Dashboard</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+			crossorigin="anonymous" referrerpolicy="no-referrer">
+	</head>
+	<body onload="onload()">
+		<header class="line"> </header>
+		<header class="HTMLHeader">
+			<div class="navbar">
+				<a href = "index.html"><img src= "CodeKidsHubLogo.png" alt= "CODE KIDS HUB Logo" class="logo"></a>
+				<nav>
+					<ul>
+						<li><a style="text-decoration:none" href = "ParentDashboard.html" accesskey="p">Parent's Dashboard</a></li>
+						<li><a style="text-decoration:none" href = "Administrator%20Dashboard.html" accesskey="a">Administrator Dashboard</a></li>
+						<li><a style="text-decoration:none" href = "courses.html" accesskey="c">Courses</a></li> 
+						<li><a style="text-decoration:none" href = "Toturs.html" accesskey="t">Tutors</a> </li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<p style="padding-top: 12%; padding-left: 1%;"> 
+			<span> 
+					  <span > 
+						<a href="index.html" title="Home" style="text-decoration: none; color: gray" >Home</a> 
+						&gt; 
+						<strong>Administrator Dashboard</strong> 
+					  </span> 
+			</span> 
+		</p>
+
+		<main>
+			<div class="mainContainer">
+    			<p id="currentWeekDates"></p>
+				<div class="AllList">
+					<Section class="KidsList">
+						<h2>Kids List</h2>
+						<div class="KidsListBox">
+							<div class="vertical-menu">
+  								<ul>
+									<li class="active"> Name <br><br> 
+										<ul class="List">
+  											<li class="second">Selma Ahmad AlRashidi</li>
+  											<li class="first">Husam khalid Al-Qahtani</li>
+  											<li class="second">Saud Yasser AlRashidi</li>
+  											<li class="first">Sarah Ibrahim Al-Harbi</li>
+											<li class="second">Sumaya Salem Al-Khalidi</li>
+											<li class="first">Fahd Ayoub Al-Rashed</li>
+											<li class="second">Nawaf Mohammed Al-Otaibi</li>
+										  	<li class="first">Suad Abdullah Al-Rifai</li>
+											<li class="second">Muneera Hamad Al-Qahtani</li>
+											<li class="first">Salem Ibrahim Al-Rashidi</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</Section>
+
+					<Section class="tutorsList">
+						<h2>Tutors List</h2>
+						<div class="tutorsListBox">
+							<div class="vertical-menuTouter">
+  								<ul>
+									<li class="active"> <span>Name</span> <br><br> 
+										<ul class="List">
+  											<li class="second"><pre><a href="Schedule1.html" accesskey="s">Ghada Al-Qtaibi</a>
+	<b>Courses: </b>Introduction to Coding, Scratch</pre></li>
+  											<li class="first"><pre><a href="Schedule2.html" accesskey="s">Hind Al-Rubaia</a>
+	<b>Courses: </b>Snap!, JavaScript</pre></li>
+  											<li class="second"><pre><a href="Schedule2.html" accesskey="s">Nada Al-Qahtani</a>
+    	<b>Courses: </b>Java</pre></li>
+  											<li class="first"><pre><a href="Schedule2.html" accesskey="s">Maha Khalid</a>
+	<b>Courses: </b>Python</pre></li>
+	
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</Section>
+				</div>
+
+				<div class="coursesTP1">
+					<div class="courseT1">
+						<div class="Head">
+							<div class="Line"></div>
+							<h3 style="padding-top: 6%; padding-left: 3%;">Introduction to Coding <br><span>By Ghada Al-Qtaibi</span></h3>		
+						</div>
+						<div class="KListBox">
+							<div class="vertical-menuK">
+								  <ul>
+									<li class="active"> <span style="font-weight: bold;">Kids Names</span> <br><br> 
+										<ul class="List">
+											<li class="second">Muneera Al-Qahtani</li>
+											<li class="first">Wafa Al-Tamimi</li>
+											<li class="second">Nawaf Al-Otaibi</li>
+											<li class="first">Abeer Al-Hamd</li>
+											<li class="second">Rana Al-Salmi</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="courseT2">
+						<div class="Head">
+							<div class="Line"></div>
+							<h3 style="padding-top: 6%; padding-left: 3%;">Scratch <br><span>By Ghada Al-Qtaibi</span></h3>		
+						</div>
+						<div class="KListBox">
+							<div class="vertical-menuK">
+								  <ul>
+									<li class="active"> <span style="font-weight: bold;">Kids Names</span> <br><br> 
+										<ul class="List">
+											<li class="second">Kholoud Al-Omari</li>
+											<li class="first">Husam Al-Qahtani</li>
+											<li class="second">Anoud Al-Ghamdi</li>
+											<li class="first">Sanaa Al-Khaled</li>
+											<li class="second">Sawsan Al-Samari</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="courseT3">
+						<div class="Head">
+							<div class="Line"></div>
+							<h3 style="padding-top: 6%; padding-left: 3%;">Python <br><span>By Maha Khalid</span></h3>		
+						</div>
+						<div class="KListBox">
+							<div class="vertical-menuK">
+								  <ul>
+									<li class="active"> <span style="font-weight: bold;">Kids Names</span> <br><br> 
+										<ul class="List">
+											<li class="second">Hind Al-Ghamdi</li>
+											<li class="first">Mohammed Salem</li>
+											<li class="second">Abeer Al-Hamd</li>
+											<li class="first">Sanaa Al-Khaled</li>
+											<li class="second">Rama Al-Salmi</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="coursesTP2">
+					<div class="courseT4">
+						<div class="Head">
+							<div class="Line"></div>
+							<h3 style="padding-top: 6%; padding-left: 3%;">Java <br><span>By Nada Al-Qahtani</span></h3>		
+						</div>
+						<div class="KListBox">
+							<div class="vertical-menuK">
+								  <ul>
+									<li class="active"> <span style="font-weight: bold;">Kids Names</span> <br><br> 
+										<ul class="List">
+											<li class="first">Kholoud Al-Omari</li>
+											<li class="second">Husam Al-Qahtani</li>
+											<li class="first">Anoud Al-Ghamdi</li>
+											<li class="second">Sanaa Al-Khaled</li>
+											<li class="first">Sawsan Al-Samari</li>
+										</ul>
+									</li>
+								</ul>
+								<div class="additional">
+									<ul class="innerList1">
+										<li class="second">Muneera Al-Qahtani</li>
+											<li class="first">Wafa Al-Tamimi</li>
+											<li class="second">Nawaf Al-Otaibi</li>
+									</ul>
+								</div>
+								<div class="buttonBox">
+									<button class="button">MORE</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="courseT5">
+						<div class="Head">
+							<div class="Line"></div>
+							<h3 style="padding-top: 6%; padding-left: 3%;">Snap! <br><span>By Hind Al-Rubaia</span></h3>		
+						</div>
+						<div class="KListBox">
+							<div class="vertical-menuK">
+								  <ul>
+									<li class="active"> <span style="font-weight: bold;">Kids Names</span> <br><br> 
+										<ul class="List">
+											<li class="second">Hind Al-Ghamdi</li>
+											<li class="first">Mohammed Salem</li>
+											<li class="second">Abeer Al-Hamd</li>
+											<li class="first">Sanaa Al-Khaled</li>
+											<li class="second">Rama Al-Salmi</li>
+										</ul>
+									</li>
+								</ul>
+								<div class="additional">
+									<ul class="innerList2">
+										<li class="first">Kholoud Al-Omari</li>
+										<li class="second">Husam Al-Qahtani</li>
+										<li class="first">Anoud Al-Ghamdi</li>
+										<li class="second">Sanaa Al-Khaled</li>
+										<li class="first">Sawsan Al-Samari</li>
+									</ul>
+								</div>
+								<div class="buttonBox">
+									<button class="button">MORE</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="courseT6">
+						<div class="Head">
+							<div class="Line"></div>
+							<h3 style="padding-top: 6%; padding-left: 3%;">JavaScript <br><span>By Hind Al-Rubaia</span></h3>		
+						</div>
+						<div class="KListBox">
+							<div class="vertical-menuK">
+								  <ul>
+									<li class="active"> <span style="font-weight: bold;">Kids Names</span> <br><br> 
+										<ul class="List">
+											<li class="second">Muneera Al-Qahtani</li>
+											<li class="first">Wafa Al-Tamimi</li>
+											<li class="second">Nawaf Al-Otaibi</li>
+											<li class="first">Abeer Al-Hamd</li>
+											<li class="second">Rana Al-Salmi</li>
+										</ul>
+									</li>
+								</ul>
+								<div class="additional">
+									<ul class="innerList3">
+										<li class="first">Muneera Al-Qahtani</li>
+										<li class="second">Hind Al-Ghamdi</li>
+										<li class="first">Mohammed Salem</li>
+										<li class="second">Abeer Al-Hamd</li>
+									</ul>
+								</div>
+								<div class="buttonBox">
+									<button class="button">MORE</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</main>
+
+		<footer>
+			<div class="footerContainer">
+				<div class="row">
+					<div class="footerNav">
+						<h4>EDUCATIONAL TOOLS</h4>
+							<ul>
+								<li>Interactive Worksheets</li>
+								<li>Worksheets Generator</li>
+								<li>Guided Lessons</li>
+								<li>Progress Tracker</li>
+					 		</ul>
+				
+					</div>
+					<div class="footerNav">
+						<h4>CONTACT US</h4>
+							<ul>
+								<li>+996533310022</li>
+								<li>+99653331111</li>
+								<li>+0116767877</li>
+								<li><a href = "mailto:CodeKidsHub@gmail.com">CodeKidsHub@gmail.com</a></li>
+							</ul>
+					</div>
+				</div>	
+			</div>
+			<div class="footerBottom">
+				<div class="socialIcons">
+					<a href="https://www.facebook.com/profile.php?id=61552633020110&locale=ar_AR" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+					<a href="https://twitter.com/CodeKidsHub" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+					<a href="https://www.instagram.com/codekidhub/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+					<a href="https://www.youtube.com/@CodeKidsHub" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+				</div>		
+				<p>© 2023 Code Kids Hub. All rights reserved</p>	
+			</div>	
+		</footer>
+	</body>
+</html>
+		

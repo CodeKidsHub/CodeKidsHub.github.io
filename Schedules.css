@@ -1,0 +1,46 @@
+.mainContainer {
+    box-sizing : border-box;
+    width : 100%;
+    height : 700px;
+}
+
+    caption {
+        color: black;
+        font-weight: bold;
+        font-size: 150%;
+    }
+
+    table {
+    position : absolute;
+    top : 250px;
+    left : 195px;
+    }
+    table, th, td {
+    border : #43c0c0 3px;
+    border-style : groove;
+    border-collapse : collapse;
+    margin : auto;
+    text-align : center;
+    color : #ffffff;
+    }
+    td {
+    color : #474747;
+    }
+    th {
+    background-color : #5cb1b1;
+    }
+    td, th {
+    padding : 15px;
+    }
+    #T1 tr:nth-child(5) {
+    background-color : rgb(215, 215, 215);
+    }
+    #T1 tr:nth-child(6) {
+    background-color : rgb(215, 215, 215);
+    }
+    #T2 tr:nth-child(2) {
+    background-color : rgb(215, 215, 215);
+    }
+    .empty {
+    background-color : rgb(215, 215, 215);
+    }

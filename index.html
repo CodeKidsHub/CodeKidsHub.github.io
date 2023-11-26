@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<style>
+			@import url("CODE KIDS HUB.css");
+		</style>
+		<script src="CodeKidsHub.js"></script>
+		<title>CODE KIDS HUB</title>
+		<meta charset="UTF-8">
+		<!--  Icons logo  -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+			crossorigin="anonymous" referrerpolicy="no-referrer">
+		<!--  Fonts Link  -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Acme&family=Tilt+Neon&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+		
+		<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	</head>
+	<body onload="onload()">
+		<header class="line"> </header>
+		<header class="HTMLHeader">
+			<div class="navbar">
+				<a href = "index.html" accesskey="h"><img src= "CodeKidsHubLogo.png" alt= "CODE KIDS HUB Logo" class="logo"></a>
+				<nav>
+					<ul>
+						<li><a style="text-decoration:none" href = "ParentDashboard.html" accesskey="p">Parent's Dashboard</a></li>
+						<li><a style="text-decoration:none" href = "Administrator%20Dashboard.html" accesskey="a">Administrator Dashboard</a></li>
+						<li><a style="text-decoration:none" href = "courses.html" accesskey="c">Courses</a></li> 
+						<li><a style="text-decoration:none" href = "Toturs.html" accesskey="t">Tutors</a> </li>
+					</ul>
+				</nav>
+			</div>
+			<div class="bx bx-menu" id="menu-icon"></div>
+			<button class="B" onclick="switchMode(true)" style="margin-left: 85.6%;">Dark Mode</button>
+			<button class="B" onclick="switchMode(false)">Light Mode</button>
+		</header>
+		
+		
+		<main>
+			<div class="mainContainer">
+				<header class= "mainHeader">
+					<img src="Background.png" alt="Background photo">
+					<div class=" text">
+						<h1><b>Make Coding Fun</b></h1>
+						<br>
+						<h3>Enjoyable, Fun and Creative <br> learning for all children worldwide</h3>
+					</div>
+				</header>
+				<section class="Vision">
+					<h2><b>Our Vision</b></h2>
+					<p>Is to inspire young children for a coding-literate future by teaching coding skills, <br> sparking curiosity about technology, and fostering critical thinking</p>
+				</section>
+
+				<div class="Courses">
+					<!--  To make the courses word have multiple colors  -->
+						<ul>
+							<li><b>C</b></li>
+							<li><b>o</b></li>
+							<li><b>u</b></li>
+							<li><b>r</b></li>
+							<li><b>s</b></li>
+							<li><b>e</b></li>
+							<li><b>s</b></li>
+						</ul>
+				</div>
+
+				<section class="cardContainer">	
+					 <!-- The course cards (first 3 courses)  -->
+					<div class ="card">
+						<!--  The course card 1  -->
+						<div class="cardContent">
+							<div class= "cardContent1">
+								<img src="programming.png" alt="Coding course logo">
+								<h2>Introduction to Coding</h2>
+								<p>Provides beginners with a foundation in computer programming to develop practical skills</p>
+								<ul>
+									<li><i class="fa fa-star checked"></i></li>
+									<li><i class="fa fa-star checked"></i></li>
+									<li><i class="fa fa-star checked"></i></li>
+									<li><i class="fa fa-star checked"></i></li>
+									<li><i class="fa fa-star checked"></i></li>
+								</ul>
+							</div>	
+						</div>
+
+						<!--  The course card 2  -->
+						<div class="cardContent">
+							<div class= "cardContent2">
+								<img src="Scratch.png.png" alt="Scratch logo">
+								<h2>Scratch</h2>
+								<p>A free, block-based programming language to help children learn to code <br><br></p>
+								<ul>
+									<li><i class="fa fa-star checked"></i></li>
+									<li><i class="fa fa-star checked"></i></li>
+									<li><i class="fa fa-star checked"></i></li>
+									<li><i class="fa fa-star checked"></i></li>
+									<li><i class="fa fa-star checked"></i></li>
+								</ul>
+							</div>	
+						</div>
+				
+
+						<!--  The course card 3  -->
+						<div class="cardContent">
+							<div class= "cardContent3">
+								<img src="python.png" alt="python logo">
+								<h2>Python</h2>
+								<p>Is a simple universal programming language that is used in robotics, AI, data science, and video games.
+								</p>
+								<ul>
+									<li><i class="fa fa-star checked"></i></li>
+									<li><i class="fa fa-star checked"></i></li>
+									<li><i class="fa fa-star checked"></i></li>
+									<li><i class="fa fa-star checked"></i></li>
+									<li><i class="fa fa-star checked"></i></li>
+								</ul>
+							</div>	
+						</div>
+					</div>
+
+					<!--  The course cards (second 3 courses) -->
+					<div class ="card">
+
+						<!--  The course card 4 -->
+						<div class="cardContent">
+							<div class= "cardContent4">
+								<img src="java.png" alt="Java logo">
+								<h2>Java</h2>
+								<p>Is a strong programming language that is used for software development, app development, and Android devices</p>
+								<ul>
+									<li><i class="fa fa-star checked"></i></li>
+									<li><i class="fa fa-star checked"></i></li>
+									<li><i class="fa fa-star checked"></i></li>
+									<li><i class="fa fa-star checked"></i></li>
+									<li><i class="fa fa-star "></i></li>
+								</ul>
+							</div>	
+						</div>
+
+						<!-- The course card 5 -->
+						<div class="cardContent">
+							<div class= "cardContent5">
+								<img src="Snap!.png" alt="Spam! logo">
+								<h2>Snap!</h2>
+								<p>Is another block-based programming language. It allows users to create their own blocks by dragging and dropping</p>
+								<ul>
+									<li><i class="fa fa-star checked"></i></li>
+									<li><i class="fa fa-star checked"></i></li>
+									<li><i class="fa fa-star checked"></i></li>
+									<li><i class="fa fa-star checked"></i></li>
+									<li><i class="fa fa-star"></i></li>
+								</ul>
+							</div>	
+						</div>
+				
+
+						<!--  The course card 6  -->
+						<div class="cardContent">
+							<div class= "cardContent6">
+								<img src="java-script.png" alt="JavaScript logo">
+								<h2>JavaScript</h2>
+								<p>Is a programming or scripting language that allows you to add advanced functionality to web sites<br><br></p>
+								<ul>
+									<li><i class="fa fa-star checked"></i></li>
+									<li><i class="fa fa-star checked"></i></li>
+									<li><i class="fa fa-star checked"></i></li>
+									<li><i class="fa fa-star "></i></li>
+									<li><i class="fa fa-star "></i></li>
+								</ul>
+							</div>	
+						</div>
+					</div>
+				</section>
+
+				<section class="Community">	
+					<h2>Join <span class="green">Code <span class="pink">K</span><span class="yellow">i</span>d<span class="blue">s</span> Hub</span> community!</h2>
+					<div class="Circles">
+						<img src="Circle.png" alt="Circle bird">
+					</div>
+					<ul>
+						<li><span>28 million</span> parents, <br> teachers, and students served</li>
+						<li>Present in <span>20 countries</span><br> across 6 continents</li>
+						<li>Library <span>30,000</span> <br> educational resourse</li>
+					</ul>
+					<section class="BoxBlue">
+						<div class="cardsRV">
+							<!-- Card 1  -->
+							<div class="cardRVContent">
+								<div class="cardR1">
+									<ul>
+										<li><i class="fa fa-star checked"></i></li>
+										<li><i class="fa fa-star checked"></i></li>
+										<li><i class="fa fa-star checked"></i></li>
+										<li><i class="fa fa-star checked"></i></li>
+										<li><i class="fa fa-star checked"></i></li>
+									</ul>
+									<img src="girl.png" alt="girl logo">
+									<h2>Hend Mohammed</h2>
+									<h4>2 weeks ago</h4>
+									<p>This website is creative, flexible, and useful to use<br><br><br></p>	
+								</div>
+							</div>
+							<!--  Card 2  -->
+							<div class="cardRVContent">
+								<div class="cardR2">
+									<ul>
+										<li><i class="fa fa-star checked"></i></li>
+										<li><i class="fa fa-star checked"></i></li>
+										<li><i class="fa fa-star checked"></i></li>
+										<li><i class="fa fa-star checked"></i></li>
+										<li><i class="fa fa-star checked"></i></li>
+									</ul>
+									<img src="profile.png" alt="Man.logo">
+									<h2>Saleh Fahad</h2>
+									<h4>6 days ago</h4>
+									<p>My child enjoyed it very much. The courses were rich with important information, and the teachers were excellent</p>	
+								</div>
+							</div>
+							<!--  Card 3  -->
+							<div class="cardRVContent">
+								<div class="cardR3">
+									<ul>
+										<li><i class="fa fa-star checked"></i></li>
+										<li><i class="fa fa-star checked"></i></li>
+										<li><i class="fa fa-star checked"></i></li>
+										<li><i class="fa fa-star checked"></i></li>
+										<li><i class="fa fa-star checked"></i></li>
+									</ul>
+									<img src="woman.png" alt="woman logo">
+									<h2>Mona Ahmed</h2>
+									<h4>2 days ago</h4>
+									<p>I really like it, it's very attractive, clear, and easy to navigate between pages<br><br></p>
+								</div>
+							</div>
+						</div>
+					</section>
+				</section>
+				<div class="RedBird">
+					<img src="RedBied.png" alt="">
+				</div>
+			</div>
+		</main>
+		
+		<footer>
+			<div class="footerContainer">
+			  <div class="row">
+				<div class="footerNav">
+				  <h4>EDUCATIONAL TOOLS</h4>
+					<ul>
+					  <li>Interactive Worksheets</li>
+					  <li>Worksheets Generator</li>
+					  <li>Guided Lessons</li>
+					  <li>Progress Tracker</li>
+					 </ul>
+			  
+				</div>
+				<div class="footerNav">
+				  <h4>CONTACT US</h4>
+					<ul>
+					  <li>+996533310022</li>
+					  <li>+99653331111</li>
+					  <li>+0116767877</li>
+					  <li><a href = "mailto:CodeKidsHub@gmail.com">CodeKidsHub@gmail.com</a></li>
+					</ul>
+				</div>
+			  </div>	
+			</div>
+			<div class="footerBottom">
+			  <div class="socialIcons">
+				<a href="https://www.facebook.com/profile.php?id=61552633020110&locale=ar_AR" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+				<a href="https://twitter.com/CodeKidsHub" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+				<a href="https://www.instagram.com/codekidhub/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+				<a href="https://www.youtube.com/@CodeKidsHub" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+			  </div>		
+			  <p>© 2023 Code Kids Hub. All rights reserved</p>	
+			</div>	
+		</footer>
+	</body>
+</html>

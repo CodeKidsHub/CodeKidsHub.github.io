@@ -1,0 +1,467 @@
+.mainContainer{
+        padding-top: 4%;
+        padding-left: 10%;
+        padding-right: 10%;
+        height: 1800px;
+}       
+
+.AllList {
+        display: flex;
+        padding-left: 2.5%;
+        padding-right: 10%;
+}
+
+/*    Kids List    */
+
+.KidsList h2, .tutorsList h2 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifs;
+        font-size: 300%;
+        white-space: nowrap;
+}
+
+.KidsList h2 {
+        margin-bottom: -12%;
+}
+
+.KidsListBox {
+        display: flex;
+        flex-wrap: wrap;
+        width: 112%;
+        height: 80%;
+        background-color: #047bc0;
+        margin: 50px 0;
+}
+
+.vertical-menu {
+        width: 220%;
+}
+     
+.vertical-menu ul li {
+        background-color: #eee;
+        color: black;
+        display: block;
+        padding: 12px;
+        text-decoration: none;
+        text-align: center;
+}
+
+.KidsList .vertical-menu ul.List {
+        overflow-y: scroll;
+        height: 250px;
+        width: 400px;
+}
+
+.vertical-menu ul li.first {
+        background-color: #ccc;
+}
+      
+.vertical-menu ul li.active {
+        background-color: #047bc0;
+        color: white;
+        padding-top: 7%;
+        padding-bottom: 2.5%;
+        padding-left: 5%;
+        padding-right: 8%;
+}
+/*    Kids List End    */
+
+
+/*    Tutors List    */
+.tutorsList {
+        padding-left: 20%;
+}
+
+.toutrsListBox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        align-items: normal;
+        width: 40%;
+        height: 80%;
+        background-color: #047bc0;
+}
+
+.vertical-menuTouter {
+        width: 150%;
+}
+     
+.vertical-menuTouter ul li {
+        background-color: #eee;
+        color: black;
+        display: block;
+        padding: 12px;
+        text-decoration: none;
+        padding-left: 15%;
+}
+
+.vertical-menuTouter ul li a {
+        text-decoration: none;
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+}
+
+.vertical-menuTouter ul li a:hover {
+        color: #2471ff;
+}
+
+.vertical-menuTouter ul li pre {
+        font-family: 'Times New Roman', Times, serif;
+}
+
+.vertical-menuTouter ul li.first {
+        background-color: #ccc;
+}
+      
+.vertical-menuTouter ul li.active {
+        background-color: #047bc0;
+        color: white;
+        padding-top: 8%;
+        padding-bottom: 8%;
+        padding-left: 5%;
+        padding-right: 5%;
+}
+
+.vertical-menuTouter ul li.active span {
+        padding-left: 15%;
+}
+/*    Tutors List End     */
+
+/* Part One Of Courses */
+.coursesTP1 {
+        padding-top: 12%;
+        padding-left: 3%;
+        display: flex;
+}
+
+.Head {
+        border-radius: 1px;
+        background-color: #f3d2d0;
+        width: 130%;
+        height: auto;
+        padding-top: 1.8%;
+        padding-bottom: 1.8%;
+        padding-left: 1.8%;
+        display: flex;
+        margin-bottom: -18%;
+        transition: height 0.3s;
+}
+
+.Head.expanded {
+        height: auto;
+}
+    
+
+.Head .h3 {
+        padding-left: 14%;
+        padding-top: 10%;
+        white-space: nowrap;
+}
+
+.Head h3 span {
+        padding-left: 23%;
+        white-space: nowrap;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: normal;
+}
+
+
+.Head .Line {
+        width: 15px;
+        height: 80px;
+        background-color: #ec948f;
+}
+
+.courseT4, .courseT5, .courseT6, .courseT2.Head .Line {
+        height: 100%;
+}
+
+
+.KListBox {
+        display: flex;
+        flex-wrap: wrap;
+        width: 112%;
+        background-color: #047bc0;
+        margin: 50px 0;
+        overflow: hidden;
+        transition: height 0.3s ease;
+        padding-left: 6%;
+}
+    
+.KListBox.expanded {
+        height: auto;
+}
+    
+.vertical-menuK {
+        width: 100%;
+}
+    
+.vertical-menuK ul li {
+        background-color: #eee;
+        color: black;
+        display: block;
+        padding: 12px;
+        padding-bottom: 2%;
+        text-decoration: none;
+        text-align: center;
+}
+    
+.vertical-menuK ul li.first {
+        background-color: #ccc;
+}
+    
+.vertical-menuK ul li.active {
+        color: rgb(0, 0, 0);
+        padding-top: 5%;
+        padding-bottom: 4%;
+        padding-left: 2%;
+        padding-right: 6%;
+        background-color: #f3d2d0;
+}
+    
+.buttonBox {
+        padding-bottom: 2%;
+}
+    
+.additional {
+        display: none;
+}
+    
+.KListBox.expanded .additional {
+        display: block;
+}
+    
+
+.vertical-menuK {
+        width: 100%;
+}
+     
+.vertical-menuK ul li {
+        background-color: #eee;
+        color: black;
+        display: block;
+        padding: 12px;
+        padding-bottom: 2%;
+        text-decoration: none;
+        text-align: center;
+}
+
+.vertical-menuK ul li.first {
+        background-color: #ccc;
+}
+      
+.vertical-menuK ul li.active {
+        color: rgb(0, 0, 0);
+        padding-top: 5%;
+        padding-bottom: 4%;
+        padding-left: 2%;       
+        padding-right: 6%;
+        background-color: #f3d2d0;
+}
+
+.courseT1 .KListBox {
+        background-color: #f3d2d0;
+        width: 130%;
+}
+
+.courseT2 .Head {
+        background-color: #d7c1e2;
+        width: 155%;
+}
+
+.courseT2 .Head .Line {
+        background-color: #673e7c;
+}
+
+
+.courseT2 .KListBox {
+        background-color: #d7c1e2;
+        width: 155%;
+}
+
+.courseT3 .Head {
+        background-color: #a8cb88;
+        width: 175%;
+        padding-left: 2%;
+}
+
+.courseT3 .Head .Line {
+        background-color: #53802a;
+}
+
+.courseT3 .KListBox {
+        background-color: #a8cb88;
+        width: 175%;
+}
+
+.courseT2 {
+        padding-left: 18%;
+}
+
+.courseT2 .vertical-menuK ul li.active {
+        color: rgb(0, 0, 0);
+        padding-top: 5%;
+        padding-bottom: 4%;
+        padding-left: 2%;       
+        padding-right: 6%;
+        background-color: #d7c1e2;
+}
+
+.courseT3 {
+        padding-left: 20%;
+}
+
+.courseT3 .vertical-menuK ul li.active {
+        color: rgb(0, 0, 0);
+        padding-top: 5%;
+        padding-bottom: 4%;
+        padding-left: 2%;       
+        padding-right: 6%;
+        background-color: #a8cb88;
+}
+
+/* Part Two Of Courses */
+
+.coursesTP2 {
+        padding-top: 5%;
+        padding-left: 3%;
+        display: flex;
+}
+
+
+.coursesTP2 .KListBox {
+        background-color: #ff8e9e;
+        width: 153%;
+}
+
+.coursesTP2 .Head {
+        background-color: #ff8e9e;
+        width: 153%;
+        height: 20%;
+}
+
+.coursesTP2 .Head .Line {
+        background-color: #fd5f74;
+}    
+
+.coursesTP2 .vertical-menuK ul li.active {
+        background-color: #ff8e9e;
+}
+
+.courseT5 .Head {
+        background-color: #86bbd9;
+        width: 155%;
+        height: 20%;
+}
+
+.courseT5 .Head .Line {
+        background-color: #198bce;
+}
+
+.courseT5 .KListBox {
+        background-color: #86bbd9;
+        width: 155%;
+}
+
+.courseT6 .Head {
+        background-color: #f3e441;
+        width: 153%;
+        height: 20.3%;
+        padding-top: 2.5%;
+        padding-left: 2%;
+}
+
+.courseT6 .Head .Line {
+        background-color: #d1ce17;
+}
+
+.courseT6 .KListBox {
+        background-color: #f3e441;
+        width: 153%;
+}
+
+.courseT5 {
+        padding-left: 21.3%;
+}
+
+.courseT5 .vertical-menuK ul li.active {
+        color: rgb(0, 0, 0);
+        padding-top: 5%;
+        padding-bottom: 3%;
+        padding-left: 2%;       
+        padding-right: 6%;
+        background-color: #86bbd9;
+}
+
+.courseT6 {
+        padding-left: 20%;
+}
+
+.courseT6 .vertical-menuK ul li.active {
+        color: rgb(0, 0, 0);
+        padding-top: 5%;
+        padding-bottom: 2%;
+        padding-left: 2%;       
+        padding-right: 6%;
+        background-color: #f3e441;
+}
+
+.innerList1 {
+        padding-left: 2%;
+        padding-right: 6%;
+        margin-top: -4%;
+}
+
+.innerList2 {
+        padding-left: 2%;
+        padding-right: 6%;
+        margin-top: -3%;
+}
+
+.innerList3 {
+        padding-left: 2%;
+        padding-right: 6%;
+        margin-top: -2%;
+}
+
+.buttonBox {
+        padding-left: 19%;
+}
+
+button { 
+        all: unset; 
+        background-color: #fec200; 
+        border-radius: 4px; 
+        border-top-left-radius: 4px; 
+        color: #000000; 
+        cursor: pointer; 
+        font-weight: bold; 
+        width: 120px; 
+        border-color: #00000000; 
+        font-family: "Times New Roman", sans-serif; 
+        text-align: center; 
+        margin: 6px auto auto; 
+        padding: 10px;
+        transition: .4s;
+} 
+@media (max-width: 991px) { 
+        .button { 
+                border-color: #000000; 
+        } 
+}
+
+button:hover {
+        transform: scale(1.03);
+        transition: .6s;
+        background-color: #f0b800;
+}
+
+div .additional {
+        display: none;
+}
+
+#currentWeekDates {
+        text-align: center; 
+        background-color: rgb(212, 208, 215); 
+        margin: 4% 0%; 
+        font-size: 2em;
+}

@@ -1,0 +1,462 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+  <meta charset="UtF-8">
+  <script src="CodeKidsHub.js"></script>
+  <script src="CourseEvaluation.js"></script>
+    <style>
+      @import url("CODE KIDS HUB.css"); 
+      .a {
+          position: relative;
+          height: auto;
+          cursor: pointer;
+          color: black;
+          text-decoration: none;
+          margin: 140px auto -2px 0;
+        }
+        .checked {
+        color: orange;
+        }
+      .raghad-framework {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        max-width: 1104px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      .main {
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+      }
+      @media (max-width: 991px) {
+        .main {
+          margin: 0 auto;
+        }
+      }
+      .title {
+        text-align: center;
+        padding-bottom: 43px;
+        width: 100%;
+        color: #04a2f1;
+        text-shadow: 0 3px 5px #6a92ab;
+        position: relative;
+        height: auto;
+        margin: 0 auto;
+        font-size: 32px ;
+      }
+      @media (max-width: 991px) {
+        .title {
+          padding: 0 0 4px 3px;
+        }
+      }
+      .line {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        border-width: 1px;
+        border-style: none;
+        margin: 14px 0;
+      }
+      h2 {
+        font-weight: bold;
+        color: #5a5592;
+        text-shadow: 1px 1px 3px #706aad;
+        margin: 0 auto;
+      }
+      @media (max-width: 991px) {
+        h2 {
+          padding-left: 96px;
+          margin: -1px auto -2px;
+        }
+      }
+      .div {
+        position: relative;
+        height: auto;
+        text-align: center;
+        color: #403b6b;
+        margin: 0 auto 26px;
+      }
+      @media (max-width: 991px) {
+        .div {
+          margin-top: 18px;
+          padding: 0 60px 0 83px;
+        }
+      }
+      .line-2 {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 14px 0 30px;
+      }
+      .form {
+        column-gap: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        row-gap: 10px;
+      }
+      .frame-feedback {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        padding-bottom: 30px;
+        margin: 0 auto;
+      }
+      .dropdown {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 183px;
+        margin: 0 auto auto;
+      }
+      #list {
+        border-bottom: 2px solid #cccccc;
+        border-bottom-color: #cccccc;
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        border-color: #78c5f5;
+        border-left: 2px solid #cccccc;
+        border-left-color: #cccccc;
+        border-left-style: solid;
+        border-left-width: 2px;
+        border-right: 2px solid #cccccc;
+        border-right-color: #cccccc;
+        border-right-style: solid;
+        border-right-width: 2px;
+        border-style: solid;
+        border-top: 2px solid #cccccc;
+        border-top-color: #cccccc;
+        border-top-style: solid;
+        border-top-width: 2px;
+        border-width: 2px;
+        outline: none;
+        width: 180px;
+        flex-direction: row;
+        display: flex;
+        color: #000000;
+        background-color: #adcc48;
+        text-align: center;
+        font-family: "Times New Roman", sans-serif;
+        margin: 0 auto auto;
+        padding: 10px;
+      }
+      .select-the-course {
+        text-align: center;
+      }
+      .option {
+        text-align: center;
+        font-size: 130%;
+      }
+      .rating-feedback {
+        width: 641px;
+        padding-top: 3px;
+        flex-direction: column;
+        display: flex;
+        position: relative;
+        margin: auto;
+      }
+
+      .star-rating {
+  
+        display:flex;
+        flex-direction: row-reverse;
+        font-size:3em;
+        justify-content:space-around;
+        padding:0 .2em;
+        text-align:center;
+        width:5em;
+      }
+
+      .star-rating input {
+        display:none;
+      }
+
+      .star-rating label {
+        color:#ccc;
+        cursor:pointer;
+      }
+
+      .star-rating :checked ~ label {
+        color:#f90;
+      }
+
+      .star-rating label:hover,
+      .star-rating label:hover ~ label {
+        color:#fc0;
+      }
+      
+      .input {
+        display: none;
+        flex-grow: 1;
+        width: auto;
+      }
+      .label-2 {
+        cursor: pointer;
+        margin-bottom: auto;
+        display: flex;
+        flex-direction: column;
+      }
+      .img {
+        object-fit: cover;
+        object-position: center;
+        width: 20px;
+        height: 20px;
+      }
+      .label-3 {
+        cursor: pointer;
+        margin-bottom: auto;
+        display: flex;
+        flex-direction: column;
+      }
+      .img-2 {
+        object-fit: cover;
+        object-position: center;
+        width: 20px;
+        height: 20px;
+      }
+      .label-4 {
+        cursor: pointer;
+        margin-bottom: auto;
+        display: flex;
+        flex-direction: column;
+      }
+      .img-3 {
+        object-fit: cover;
+        object-position: center;
+        width: 20px;
+        height: 20px;
+      }
+      .label-5 {
+        cursor: pointer;
+        margin-bottom: auto;
+        display: flex;
+        flex-direction: column;
+      }
+      .img-4 {
+        object-fit: cover;
+        object-position: center;
+        width: 20px;
+        height: 20px;
+      }
+      .label-6 {
+        cursor: pointer;
+        margin-bottom: auto;
+        display: flex;
+        flex-direction: column;
+      }
+      .img-5 {
+        object-fit: cover;
+        object-position: center;
+        width: 20px;
+        height: 20px;
+      }
+      .label-7 {
+        font-weight: bold;
+        width: 599px;
+        height: 33.7px;
+        text-align: center;
+        margin: -4px auto auto;
+      }
+      @media (max-width: 991px) {
+        .label-7 {
+          padding-right: 200px;
+        }
+      }
+      .feedback-area {
+        border: 1px solid #333333;
+        border-radius: 7px;
+        width: 97%;
+        padding: 10px;
+        height: 101px;
+        font-family: "Times New Roman", sans-serif;
+        border-style: solid;
+        border-color: #cccccc;
+        margin: 0 auto auto;
+      }
+      @media (max-width: 991px) {
+        .feedback-area {
+          margin: 0 -3px 0 -2px;
+        }
+      }
+      .button {
+        all: unset;
+        background-color: #fec200;
+        border-radius: 4px;
+        border-top-left-radius: 4px;
+        color: #000000;
+        cursor: pointer;
+        font-weight: bold;
+        width: 120px;
+        border-color: #00000000;
+        text-align: center;
+        margin: 6px auto auto;
+        padding: 10px;
+        transition: .4s;
+      }
+      @media (max-width: 991px) {
+        .button {
+          border-color: #000000;
+        }
+      }
+      button:hover {
+        transform: scale(1.02);
+        transition: .6s;
+        background-color: #f0b800;
+      }
+      .line-3 {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 14px 0 30px;
+      }
+      .fa:hover {
+        transform: scale(1.1);
+        transition: .6s;
+      }
+      .fa {
+        transition: .4s;
+      }
+      textarea {
+        background-color: rgb(244, 244, 244);
+      }
+    </style>
+    <title>Course Evaluation</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+			crossorigin="anonymous" referrerpolicy="no-referrer">
+      <script src="CodeKidsHub.js"></script>
+
+
+</head>
+
+<body onload="onload()">
+  <header class="line"> </header>
+  <header class="HTMLHeader">
+    <div class="navbar">
+      <a href = "index.html"><img src= "CodeKidsHubLogo.png" alt= "CODE KIDS HUB Logo" class="logo"></a>
+      <nav>
+        <ul>
+          <li><a style="text-decoration:none" href = "ParentDashboard.html" accesskey="p">Parent's Dashboard</a></li>
+						<li><a style="text-decoration:none" href = "Administrator%20Dashboard.html" accesskey="a">Administrator Dashboard</a></li>
+						<li><a style="text-decoration:none" href = "courses.html" accesskey="c">Courses</a></li> 
+						<li><a style="text-decoration:none" href = "Toturs.html" accesskey="t">Tutors</a> </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+    <p style="padding-top:12%; padding-left: 1%;">
+      <span>
+                <span >
+                  <a href="index.html" title="Home" style="text-decoration: none; color: gray" >Home</a>
+                  &gt;
+                  <a href="ParentDashboard.html" title="Parents Dashboard" style="text-decoration: none; color: gray">Parents Dashboard</a>
+                  &gt;
+                  <strong>Course Evaluation</strong>
+                </span>
+      </span>
+    </p>
+
+  <div class="raghad-framework" >
+    <div class="main">
+      <div class="title"><h1>Course Evaluation</h1></div>
+      <h2>
+        <span id="H2Eval">
+          Your Feedback Powers Our Progress
+        </span>
+      </h2>
+      <br>
+      <div class="div" id="PEval">
+        <p style="text-align: center; line-height: 2em; font-size: 112%;">
+          A Code kids Hub, we believe in the transformative power of constructive
+          feedback. Your insights and evaluations help us refine our courses and
+          enhance the learning experience for every child. By sharing your
+          thoughts, you play a vital role in shaping the future of programming
+          education for young minds. We are deeply grateful for your valuable
+          feedback, and together, we strive for excellence in nurturing the tech
+          talents of tomorrow.
+        </p>
+      </div>
+      <div class="line-2">
+        <hr>
+      </div>
+      <form class="form">
+        <div class="frame-feedback">
+          <div class="dropdown">
+            <select id="list" required>
+              <option value="0" selected="" disabled="" class="select-the-course">Select the Course</option>
+              <option value="1" class="option">Introduction to Coding</option>
+              <option value="2" class="option">Scratch</option>
+              <option value="3" class="option">Python</option>
+              <option value="4" class="option">Java</option>
+              <option value="5" class="option">Snap!</option>
+              <option value="6" class="option">JavaScript</option>
+            </select>
+          </div>
+          
+          <div class="rating-feedback">
+            <div class="star-rating">
+              <input type="radio" id="5-stars" name="rating" value="5" />
+              <label for="5-stars" class="star">&#9733;</label>
+              <input type="radio" id="4-stars" name="rating" value="4" />
+              <label for="4-stars" class="star">&#9733;</label>
+              <input type="radio" id="3-stars" name="rating" value="3" />
+              <label for="3-stars" class="star">&#9733;</label>
+              <input type="radio" id="2-stars" name="rating" value="2" />
+              <label for="2-stars" class="star">&#9733;</label>
+              <input type="radio" id="1-star" name="rating" value="1" />
+              <label for="1-star" class="star">&#9733;</label>
+            </div>
+            <p id="one" onclick="myFunction()"></p>
+              <h3 class="label-7">Feedback</h3>
+            <textarea
+              placeholder="Your feedback matters! Share your thoughts on your child's course experience here."
+              class="feedback-area"
+            ></textarea>
+            <button type="submit" class="button" >Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footerContainer">
+      <div class="row">
+        <div class="footerNav">
+          <h4>EDUCATIONAL TOOLS</h4>
+            <ul>
+              <li>Interactive Worksheets</li>
+              <li>Worksheets Generator</li>
+              <li>Guided Lessons</li>
+              <li>Progress Tracker</li>
+             </ul>
+      
+        </div>
+        <div class="footerNav">
+          <h4>CONTACT US</h4>
+            <ul>
+              <li>+996533310022</li>
+              <li>+99653331111</li>
+              <li>+0116767877</li>
+              <li><a href = "mailto:CodeKidsHub@gmail.com">CodeKidsHub@gmail.com</a></li>
+            </ul>
+        </div>
+      </div>	
+    </div>
+    <div class="footerBottom">
+      <div class="socialIcons">
+        <a href="https://www.facebook.com/profile.php?id=61552633020110&locale=ar_AR" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://twitter.com/CodeKidsHub" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.instagram.com/codekidhub/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@CodeKidsHub" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+      </div>		
+      <p>© 2023 Code Kids Hub. All rights reserved</p>	
+    </div>	
+  </footer>
+</body>
+
+</html>
